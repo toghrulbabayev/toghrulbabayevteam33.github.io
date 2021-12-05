@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #D7DDE5;
+    font-family: "Roboto", sans-serif;
+}
+img{
+    height: 90px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    align-items: center;
+    background: #cecfda;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #07080a;
+    padding: 8px 30px;
+    border-radius: 7px;
+    transition: all .3s ease;
+}
+
+ul li a:hover,
+ul li a.active {
+    color: #FFF;
+    background: #0075FF;
+}
+
+#icon {
+    background-color: #0075FF;
+    padding: 5px 7px 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#icon svg {
+    color: #FFF;
+    height: 28px;
+    transition: all .3s ease;
+}
+
+#icon:hover {
+    background: #FFF;
+}
+
+#icon:hover svg {
+    color: #0075FF;
+}
+
+#checkbox,
+#icon {
+    display: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+@media screen and (max-width: 786px) {
+    nav {
+        border-bottom: 1px solid #455468;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 71px);
+        background-color: #2a486d;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: none;
+        margin-top: 71px;
+    }
+
+    ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    #checkbox:checked~ul {
+        display: block;
+    }
+}
+body{
+    background-image: url('white.jpg');
+    background-size: cover;
+}
+h1{
+    background-color: rgba(240, 95, 95, 0.3);
+    color: whitesmoke;
+    display:inline-table;
+    border-radius: 18%;
+}
+p{
+  font-size:22px;  
+  font-family:italic;
+  padding-top: 10px;
+}
+.members{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.members ol a{
+    background-color:rgba(188, 188, 189, 0.3);
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(22, 60, 230);
+    font-display:  10px;
+
+}
+table{
+    font-size: 17px;
+    background-color: rgba(216, 219, 17, 0.555);
+    font-display: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+#AboutWebsite a{
+    font-size: 20px;
+    
+}
